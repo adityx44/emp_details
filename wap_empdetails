@@ -1,0 +1,47 @@
+#include<iostream>
+
+using namespace std;
+class employee
+{
+    public:
+    char name[30];
+    int age;
+    long salary;
+    void getdata()
+    {
+        cout<<"Enter name\n";
+        cin>>name;
+        cout<<"\nEnter age\n";
+        cin>>age;
+        cout<<"Enter salary\n";
+        cin>>salary;
+
+    }
+    void display()
+    {
+        cout<<"\nName:"<<name;
+        cout<<"\nAge :"<<age;
+        cout<<"\nSalary :"<<salary;
+
+    }
+    const int n=5;
+};
+int main()
+{  
+    int n=5;
+    employee manager[n];
+    cout<<"Enter details of manager\n";
+    for(int i=0;i<n;i++)
+    {
+        manager[i].getdata();
+    }
+    cout<<"\n";
+    cout<<"The details of manager are\n";
+    for(int i=0;i<n;i++)
+    {
+        manager[i].display();
+    }
+
+
+    return 0;
+}
